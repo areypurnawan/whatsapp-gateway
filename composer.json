@@ -49,5 +49,7 @@
         "WhatsappGateway": "Areypurnawan\\WhatsappGateway\\WhatsappGatewayFacade"
       }
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
