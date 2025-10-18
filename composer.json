@@ -2,6 +2,7 @@
   "name": "areypurnawan/whatsapp-gateway",
   "description": "Laravel package to provide Whatsapp gateway integration. Whatsapp channel for Laravel notifications also included.",
   "license": "MIT",
+  "version": "1.0.0",
   "keywords": [
     "laravel whatsapp gateway",
     "laravel notifications",
