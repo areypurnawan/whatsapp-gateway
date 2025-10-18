@@ -1,0 +1,54 @@
+{
+  "name": "areypurnawan/whatsapp-gateway",
+  "version": "1.0.0",
+  "description": "Laravel package to provide Whatsapp gateway integration. Whatsapp channel for Laravel notifications also included.",
+  "license": "MIT",
+  "keywords": [
+    "laravel whatsapp gateway",
+    "laravel notifications",
+    "laravel whatsapp sender",
+    "laravel whatsapp notifications"
+  ],
+  "homepage": "https://github.com/areypurnawan/whatsapp-gateway",
+  "authors": [
+    {
+      "name": "Ari Purnawan",
+      "email": "areypurnawan@gmail.com",
+      "homepage": "https://github.com/areypurnawan",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+    "guzzlehttp/guzzle": "~6.0|^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.3|^9.5.10",
+    "orchestra/testbench": "~3.0|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Areypurnawan\\WhatsappGateway\\": "src"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AreyPurnawan\\WhatsappGateway\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AreyPurnawan\\WhatsappGateway\\WhatsappGatewayServiceProvider"
+      ],
+      "aliases": {
+        "WhatsappGateway": "AreyPurnawan\\WhatsappGateway\\WhatsappGatewayFacade"
+      }
+    }
+  }
+}
